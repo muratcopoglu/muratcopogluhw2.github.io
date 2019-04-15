@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <title>My Web Site</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+
+<body align="center" style="background-color:powderblue;" background="bground.jpg">
+
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="films.html">Films</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="books.html">Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="musics.html">Musics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="usefullinks.html">Useful Links</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactme.html">Contact Me</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="registration.html">Registration</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> 
+
+
+	<header>
+      <center>
+      <br>
+      	<h2><strong>You Can Register to My WebSite</strong></h2>
+      </center>
+    </header>
+
+
+
+	<div class="container" align="center">
+    <form method="post">
+      	<fieldset>
+	        <legend>Registration Form</legend>
+			<label for="Name">Name and Surname:</label>
+			<input type="Text" name="Name"><br><br>
+			&ensp;&ensp;
+			<label for="Password">Password:&ensp;&ensp;&ensp;&ensp;</label> &ensp;&ensp;
+			<input type="Password" name="Username"><br><br>
+			&ensp;&ensp;&ensp;&ensp;
+			<label for="E-mail">E-mail:&ensp;</label>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+			<input type="Text" placeholder="abcde@example.com" name="E-mail">
+			<br><br>
+			<label for="Birthday">Date of Birth:&emsp;</label>&ensp;&ensp;
+	        <input type="Date" name="Birthday">
+			<br><br>&ensp;&ensp;&ensp;&ensp;
+			<label for="Department">Department:</label>&ensp;&ensp;&ensp;&ensp;
+			<select>
+				<option value="Industrial Eng">Industrial Engineering</option>
+				<option value="Mechanical Eng">Mechanical Engineering</option>
+				<option value="Computer Eng">Computer Engineering</option>
+				<option value="Environmental Eng">Environmental Engineering</option>
+				<option value="Electrical Eng">Electrical Engineering</option>
+				<option value="Civil Eng">Civil Engineering</option>	
+			</select> <br><br>
+
+			<label for="Gender">Gender:</label>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+			<select>
+				<option value="Female">Female</option>
+				<option value="Male">Male</option>
+			</select><br><br>
+
+			<table align="center">
+				<tr>
+					<td>
+					&ensp;&ensp;&ensp;&ensp;<label for="Message"> Message:</label>&ensp;&ensp;&ensp;&ensp;&ensp;
+					</td>
+					<td align="center">
+				    <textarea name="message" rows="5" cols="22" ></textarea>
+				    </td>
+				 </tr>
+			</table><br><br>
+			&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+
+			<label for="uploadpic" > Upload Your Photo: </label>&ensp;&ensp;
+	        <input type="file" name="PhotoToUpload" id="uploadpic">
+	        <br><br><br>
+	        
+	        <label for="cb">Your Interests </label> <br>
+
+	        <input type="checkbox" name="travel" id="travel"> Travel <br>
+	        <input type="checkbox" name="music" id="music"> Music <br>
+	        <input type="checkbox" name="cinem" id="cinema"> Cinema  <br>
+	        <input type="checkbox" name="game" id="gaming"> Gaming <br>
+	        <input type="checkbox" name="spor" id="sport"> Sports <br>
+
+      	</fieldset> 
+    </form> <br>
+
+          	<input type="submit" value="Submit" onclick="alert('Successfully Registered!');">
+	<a href="registration.html"><input type="submit" value="Reset" ></a><br><br>
+
+        <a href="index.html"> <img src="https://image.flaticon.com/icons/svg/25/25694.svg" style="width: 45px; height: 45px"></a>
+</div>
+</body>
+</html>
